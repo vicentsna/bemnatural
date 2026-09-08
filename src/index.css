@@ -1262,17 +1262,21 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: saturate(0.85) contrast(1.06);
+  /* as fotos são de baixa resolução: o blur transforma isso em atmosfera */
+  filter: saturate(0.8) contrast(1.05) blur(3px);
+  transform: scale(1.06);
 }
 .ambiance-veil {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    178deg,
-    rgba(42, 61, 40, 0.3) 0%,
-    rgba(42, 61, 40, 0.55) 45%,
-    rgba(42, 61, 40, 0.86) 100%
-  );
+  background:
+    radial-gradient(120% 80% at 15% 100%, rgba(42, 61, 40, 0.55), transparent 70%),
+    linear-gradient(
+      178deg,
+      rgba(42, 61, 40, 0.45) 0%,
+      rgba(42, 61, 40, 0.6) 40%,
+      rgba(42, 61, 40, 0.88) 100%
+    );
 }
 .ambiance-inner {
   position: relative;
