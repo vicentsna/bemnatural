@@ -91,15 +91,14 @@ const U = (id: string, w = 1200) =>
   `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=80`;
 
 export const img = {
+  // ── Pratos — ainda placeholders. Troque por fotos reais dos pratos. ──
   heroDish: U('1519708227418-c8fd9a32b7a2', 1200), // salmão ao pesto, prato montado
   featuredDish: U('1467003909585-2f8a72700288', 1400), // salmão grelhado
-  acai: U('1590301157890-4810ed352733', 900), // bowl de açaí
-  salad: U('1512621776951-a57141f2eefd', 1000), // salada colorida
-  bowl: U('1546069901-ba9599a7e63c', 1000), // buddha bowl
-  juice: U('1622597467836-f3285f2131b8', 800), // sucos detox
-  ambianceA: U('1517248135467-4c7edcad34c4', 900), // salão / mesa
-  ambianceB: U('1490645935967-10de6ba17061', 700), // ingredientes frescos
-  ingredients: U('1540420773420-3366772f4999', 900), // vegetais flatlay
+
+  // ── Salão (fotos reais) — coloque os arquivos em /public/fotos/ ──
+  salaoBalcao: '/fotos/salao-balcao.jpg', // corredor com o balcão verde e as plantas
+  salaoLogo: '/fotos/salao-logo.jpg', // cantinho com a logo "bem natural" na parede
+  salaoJanela: '/fotos/salao-janela.jpg', // vista de dentro para a rua, samambaia
 };
 
 export const getWhatsAppUrl = (message?: string) => {

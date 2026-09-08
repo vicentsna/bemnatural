@@ -2,6 +2,7 @@ import './index.css';
 import Nav from './components/Nav';
 import Hero from './components/Hero';
 import Signature from './components/Signature';
+import Ambiance from './components/Ambiance';
 import Menu from './components/Menu';
 import About from './components/About';
 import OrderChannels from './components/OrderChannels';
@@ -22,6 +23,7 @@ export default function App() {
       <main id="conteudo">
         <Hero />
         <Signature />
+        <Ambiance />
         <Menu />
         <About />
         <OrderChannels />

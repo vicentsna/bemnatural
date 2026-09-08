@@ -1,0 +1,10 @@
+Coloque aqui as 3 fotos reais do salao, com EXATAMENTE estes nomes:
+
+  salao-balcao.jpg   -> corredor comprido com o balcao verde, cadeiras verdes e plantas
+  salao-logo.jpg     -> cantinho com a mesa verde e a logo "bem natural" escrita na parede
+  salao-janela.jpg   -> vista de dentro para a rua, com a samambaia pendurada
+
+Formato: JPG (ou .webp, mudando a extensao no src/data/config.ts).
+Ideal: ~1600px no lado maior, abaixo de ~400 KB cada.
+Nao precisa editar cor/brilho: o site aplica o tratamento (leve dessaturacao,
+tom verde da marca, contraste) automaticamente.
