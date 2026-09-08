@@ -1,30 +1,33 @@
 import './index.css';
-import Header from './components/Header';
+import Nav from './components/Nav';
 import Hero from './components/Hero';
-import QuickLinks from './components/QuickLinks';
-import MenuSection from './components/MenuSection';
-import AboutSection from './components/AboutSection';
-import CtaBlocks from './components/CtaBlocks';
-import InfoSection from './components/InfoSection';
+import Signature from './components/Signature';
+import Menu from './components/Menu';
+import About from './components/About';
+import OrderChannels from './components/OrderChannels';
+import Footer from './components/Footer';
+import OrderDock from './components/OrderDock';
 import WhatsAppFloat from './components/WhatsAppFloat';
-import { useScrollAnimation } from './hooks/useScrollAnimation';
+import { useReveal } from './hooks/useReveal';
 
 export default function App() {
-  useScrollAnimation();
+  useReveal();
 
   return (
     <>
-      <Header />
-
-      <main id="main-content">
+      <a className="skip" href="#conteudo">
+        Pular para o conteúdo
+      </a>
+      <Nav />
+      <main id="conteudo">
         <Hero />
-        <QuickLinks />
-        <MenuSection />
-        <AboutSection />
-        <CtaBlocks />
-        <InfoSection />
+        <Signature />
+        <Menu />
+        <About />
+        <OrderChannels />
       </main>
-
+      <Footer />
+      <OrderDock />
       <WhatsAppFloat />
     </>
   );
